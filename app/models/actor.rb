@@ -1,3 +1,3 @@
-class Director < ActiveRecord::Base
+class Actor < ActiveRecord::Base
   validates :name, :presence => true, :uniqueness => { :scope => :dob }
 end

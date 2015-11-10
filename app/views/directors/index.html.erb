@@ -11,8 +11,7 @@
       <tr>
         <th>Name</th>
         <th>Dob</th>
-        <th>Bio</th>
-        <th>Image url</th>
+        <th>Image</th>
         <th>Actions</th>
       </tr>
 
@@ -20,8 +19,7 @@
       <tr>
         <td><%= director.name %></td>
         <td><%= director.dob %></td>
-        <td><%= director.bio %></td>
-        <td><%= director.image_url %></td>
+        <td><img src="<%= director.image_url %>" width="50"></td>
         <td>
           <a href="/directors/<%= director.id %>" class="btn btn-primary">Show</a>
           <a href="/directors/<%= director.id %>/edit" class="btn btn-warning">Edit</a>
